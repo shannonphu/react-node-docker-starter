@@ -1,0 +1,13 @@
+{
+  "name": "react-node-docker-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate for react/node/docker projects",
+  "main": "",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
