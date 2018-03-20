@@ -6,11 +6,11 @@ function index(req, res) {
 	res.json('/ endpoint hit');
 }
 
-function test(req, res) {
-	res.json('/test endpoint hit');
+function getName(req, res) {
+	res.json('Joe Bruin');
 }
 
 module.exports = {
-	index: index,
-	test: test
+	index,
+	getName
 };

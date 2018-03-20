@@ -4,6 +4,12 @@ const express = require('express');
 const http = require('http');
 const app = express();
 const server = http.createServer(app);
+const cors = require('cors');
+
+app.use(cors({
+    credentials: true,
+    origin: true
+}));
 
 const config = require('./config');
 
