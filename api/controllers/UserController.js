@@ -3,11 +3,11 @@
 const User = require('../models/User'); // eslint-disable-line
 
 function index(req, res) {
-	res.json('/ endpoint hit');
+	res.json({ data: 'Hello World!' })
 }
 
 function getName(req, res) {
-	res.json('Joe Bruin');
+	res.json({ data: 'Joe Bruin' })
 }
 
 module.exports = {
