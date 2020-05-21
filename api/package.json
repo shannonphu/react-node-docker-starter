@@ -8,8 +8,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "mongoose": "^4.12.6",
-    "cors": "^2.8.4"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15"
   }
 }
