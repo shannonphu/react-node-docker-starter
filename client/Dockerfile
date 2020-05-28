@@ -1,16 +1,10 @@
 FROM node:alpine
 
-# set working directory
-RUN mkdir -p /src/app
-WORKDIR /src/app
+ADD package.json /app/package.json
+RUN cd /app && npm install
+RUN mkdir -p /opt/app && cp -a /app/node_modules /opt/app/
 
-# add `/src/app/node_modules/.bin` to $PATH
-ENV PATH /src/app/node_modules/.bin:$PATH
+WORKDIR /opt/app
+ADD . /opt/app
 
-# install and cache app dependencies
-ADD package.json /src/app/package.json
-RUN npm install
-ADD . /src/app
-
-# start app
-CMD ["npm", "start"]
+CMD npm start
